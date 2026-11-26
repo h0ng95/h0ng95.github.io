@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-adsense-account" content="ca-pub-5191291718562778">
+    <meta name="description" content="Patchbell은 Windows와 macOS에서 사용 중인 프로그램과 개발 도구의 보안 업데이트를 알려주는 앱입니다.">
+    <title>Patchbell — 내 프로그램 보안 업데이트 알림</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+        font-family: system-ui, sans-serif;
+        background: light-dark(#f6f7ef, #131e18);
+        color: light-dark(#18251e, #f5f8ef);
+        --muted: light-dark(#465c4d, #b8cbbf);
+        --line: light-dark(#cad8c8, #34453b);
+        --button: light-dark(#315b24, #c9f88b);
+        --on-button: light-dark(#fff, #1b301c);
+      }
+      body { margin: 0; }
+      main { width: min(44rem, calc(100% - 3rem)); margin: clamp(3rem, 12vh, 8rem) auto; }
+      .brand { display: flex; align-items: center; gap: .6rem; font-weight: 750; }
+      h1 { margin: 1.5rem 0 .9rem; font-size: clamp(2rem, 6vw, 3.5rem); line-height: 1.15; letter-spacing: -.045em; word-break: keep-all; }
+      p, li { color: var(--muted); line-height: 1.65; word-break: keep-all; }
+      ul { padding-left: 1.3rem; }
+      li + li { margin-top: .4rem; }
+      nav { display: flex; align-items: center; flex-wrap: wrap; gap: 1rem; margin: 1.7rem 0 2rem; }
+      a { color: inherit; text-underline-offset: .2em; }
+      .primary { padding: .65rem .95rem; border-radius: .55rem; background: var(--button); color: var(--on-button); font-weight: 650; text-decoration: none; }
+      a:focus-visible { outline: 2px solid var(--button); outline-offset: 4px; }
+      section { padding-top: 1.2rem; border-top: 1px solid var(--line); }
+      h2 { margin: 0; font-size: 1rem; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="brand"><img src="/Patchbell/patchbell-logo.png" width="32" height="32" alt=""> Patchbell</div>
+      <h1>내 프로그램의 보안 업데이트를 확인하세요</h1>
+      <p>Patchbell은 등록한 프로그램, 에디터, SDK의 설치 버전에 영향을 주는 공개 보안 공지를 확인하고 데스크톱에서 알림을 보내는 Windows·macOS 앱입니다.</p>
+      <nav aria-label="Patchbell 링크">
+        <a class="primary" href="/Patchbell/">Patchbell 홈페이지</a>
+        <a href="/Patchbell/#download">다운로드</a>
+        <a href="https://github.com/h0ng95/Patchbell">GitHub 저장소</a>
+      </nav>
+      <section aria-labelledby="features">
+        <h2 id="features">Patchbell에서 할 수 있는 일</h2>
+        <ul>
+          <li>이 기기에 설치된 앱과 개발 도구를 찾아 등록하거나 직접 버전을 입력할 수 있습니다.</li>
+          <li>npm 프로젝트에서 설치된 의존성을 읽어 추적할 패키지를 고를 수 있습니다.</li>
+          <li>설치 버전에 영향을 주는 공지가 있으면 알림을 받고 공식 업데이트 안내를 열 수 있습니다.</li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
